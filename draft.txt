@@ -1,0 +1,8 @@
+As our world heads towards a climate catastrophe, I feel morally obligated to work for an entity that promotes sustainable ideologies, methods, technologies, and goals to help mitigate climate change as much as possible. My goal is to find an organization that meets these standards and is able to utilize my tech-oriented skillset to help meet their goals. As far as careers go, becoming a systems administrator is a path that has always piqued my interest, but I am also open to careers in web/mobile app development, web/network administration, and other careers in the field of IT/Computer repair. 
+
+
+skillset: 
+- Computer repair
+- Web design
+- Mobile app development
+- Coding
