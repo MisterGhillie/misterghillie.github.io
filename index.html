@@ -10,6 +10,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/fontawesome-all.min.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
@@ -48,7 +49,6 @@
 							<article id="intro">
 								<h2 class="major">Intro</h2>
 								<span class="image main"><img src="images/headshot.jpg" alt="" /></span>
-								<p>I am a newly graduate from the University of Utah interested in using a skill set rooted in technology to aid in the fight against climate change. Nothing would excite me more than to be able to apply my experience in <a href="#work">servicing computers</a>, building websites, working with databases, and providing IT support for a company that strives to be sustainable!</p>
 								<p>As our world heads towards a climate catastrophe, I feel morally obligated to work for an entity that promotes sustainable ideologies, methods, technologies, and goals to help mitigate climate change as much as possible. My goal is to find an organization that meets these standards and is able to utilize my tech-oriented skillset to help meet their goals. As far as careers go, becoming a systems administrator is a path that has always piqued my interest, but I am also open to careers in web/mobile app development, web/network administration, and other careers in the field of IT/Computer repair.</p>
 							</article>
 
@@ -56,7 +56,11 @@
 							<article id="work">
 								<h2 class="major">Work</h2>
 								<span class="image main"><img src="images/work.jpg" alt="" /></span>
-								<p>I've had nearly 4 years of experience repairing computers working at the UTech Service Center in the University of Utah Campus Store. This wonderful opportunity has helped me earn an extra income while going to school. I am an Apple-Certified Mac Technician (ACMT) and have plenty of experience servicing Macs and PCs. </p>
+								<p>I have nearly 4 years of experience repairing computers at the UTech Service Center in the University of Utah Campus Store. This wonderful opportunity has not only allowed me to earn some extra income while going to school, but has also given me experience working with customers and interacting with university departments and partnered companies in a professional manner. I have acquired considerable knowledge in regards to troubleshooting and repairing Mac computers from my boss, a nearly 20-year veteran in servicing Apple products. My experience in Windows and Linux environments made me a desirable candidate for the Computer Technician position and a valuable member of the UTech service team.</p>
+								<h3>Certifications</h3>
+								<p>My job required me to take the Apple-Certified Mac Technician (ACMT) and Computer Service Essentials exams when I first started. I am also Google-certified in GCP Essentials and Networking in the Google Cloud. In addition to these certifications, I was also named Employee of the Month in May 2019 for "being frequently commended by customers for [my] ability to simply, yet thoroughly, address an issue and find a solution."</p>
+								<!-- TODO: insert employee of the month picture -->
+								<h3>Demonstration</h3>
 								<video class="image main" controls>
 								<source src="images/timelapse.mp4" type="video/mp4">
 								Your browser does not support the video tag.
@@ -67,42 +71,42 @@
 						<!-- Projects -->
 							<article id="projects">
 								<h2 class="major">Projects</h2>
-								<span class="image main"><img src="images/pic03.jpg" alt="" /></span>
+								<span class="image main"><img src="images/internet_map.jpg" alt="internet map" /></span>
 								<h3>Pantree</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices. Aliquam libero et malesuada fames ac ante ipsum primis in faucibus. Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit amet.</p>
+								<p>For my senior capstone project, I worked on a team of four to develop a kitchen management app called Pantree that aims to reduce food waste by keeping inventory of the food in your pantry and suggesting recipes that uses food items closest to expiration. We used Google Firebase Firestore as our backend database along with the Flutter and Dart technologies to inevitably deploy the project across multiple platforms including Android, iOS, and the web.</p>
+								<p>I mainly worked on the pantry and shopping list views along with app's front-end design. The features I worked on for both views include the pantry/list selector drop down, the ability to add/remove pantry/list items, the ability to edit and remove a pantry/list, and the item cards for each food item. In addition to these features, I also helped to keep our codebase organized, fixed bugs when they arose, and improved the style of the UI across the app.</p>
 								<h3>Web Browser in Python</h3>
-								<h3>Local P2P File Transer System</h3>
+								<p>In my class on Web Browser Internals I spent the entire semester building a fully-functional web browser from the ground up to help understand the inner-workings of modern browsers. The features this browser contains are: server-connectivity & interaction, a dynamic GUI, parsers for HTML, CSS, and JavaScript, link redirects, form submission, and basic security.</p>
+								<h3>Local P2P File Transfer System</h3>
+								<p>One of my most enjoyed projects in the CS program was creating a local peer-to-peer (P2P) file transfer system for my Computer Networks class. This simple P2P network was written in Java and works by running 3 separate servers and nodes (clients). The user must specify the ports for each server to run on as a single command-line argument. When the user runs a node, they will be prompted to specify those 3 server ports along with the ID for the node. The node IDs must be either 1, 2, or 3 and they must be distinct. After the user inputs all the required data, each node will connect to a "home" server first (each node's home server will be different) along with the other two servers. The server is multithreaded, allowing for multiple clients to connect at once, however the client code only runs on a single thread. I initially attempted to make the client code multithreaded, but there was no easy way for the threads to accurately share data between one another. Once the clients are all connected to each other, the user waits until the same line is displayed in every terminal before continuing. The auto setup system will elect a leader node and disconnect the non-leader peers from each other. From there, the non-leaders will specify the names of the files they want to send, taking caution to not continue before both nodes specify the files they want to share. The non-leaders will then specify the names of the files they want to retrieve. The retrieved files will be located in the "ReceivedFiles" directory. Once the user is finished, they can then type "exit" on each peer to close the program.</p>
 							</article>
 
 						<!-- Contact -->
 							<article id="contact">
 								<h2 class="major">Contact</h2>
-								<form method="post" action="#">
-									<div class="fields">
-										<div class="field half">
-											<label for="name">Name</label>
-											<input type="text" name="name" id="name" />
-										</div>
-										<div class="field half">
-											<label for="email">Email</label>
-											<input type="text" name="email" id="email" />
-										</div>
-										<div class="field">
-											<label for="message">Message</label>
-											<textarea name="message" id="message" rows="4"></textarea>
-										</div>
-									</div>
-									<ul class="actions">
-										<li><input type="submit" value="Send Message" class="primary" /></li>
-										<li><input type="reset" value="Reset" /></li>
+									<form method="post" action="mailto:ben.rl.perez@gmail.com" name="contactForm">
+										<!--<<div class="fields">
+											<div class="field half">
+												<label for="name">Name</label>
+												<input type="text" name="name" id="name" />
+											</div>
+											<div class="field half">
+												<label for="email">Email</label>
+												<input type="text" name="email" id="email" />
+											</div>
+											<div class="field">
+												<label for="message">Message</label>
+												<textarea name="message" id="message" rows="4"></textarea>
+											</div>
+										</div>-->
+										<ul class="actions">
+											<li><input type="submit" value="Send me an email" class="primary" /></li>
+										</ul>
+									</form>
+									<ul class="icons">
+										<li><a href="https://www.linkedin.com/in/ben-perez/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+										<li><a href="https://www.github.com/MisterGhillie" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
 									</ul>
-								</form>
-								<ul class="icons">
-									<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-									<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-									<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-								</ul>
 							</article>
 
 						<!-- Elements -->
